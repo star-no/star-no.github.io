@@ -8,14 +8,14 @@ letsencrypt의 복잡한 설정방법을 손쉽게 해주는 도구이다. 자�
 
 https://certbot.eff.org/#centos6-nginx
 
-certbot 다운
+### certbot 다운
 
 ```
 wget https://dl.eff.org/certbot-auto
 chmod a+x certbot-auto
 ```
 
-인증서 설치
+### 인증서 설치
 
 ```
 sudo ./certbot-auto certonly --agree-tos --no-eff-email --email user@email.com --webroot -w /path/to/nginx/html -d your.domain.com
@@ -42,7 +42,7 @@ nginx를 https로 사용하려면 빌드시 추가로 설정해줘야하는 부�
 443포트로 들어오는 요청은 https 인증 후 8001 포트로 리다이렉트를 한다.
 또한 기존 80포트는 301 request code를 반환하여 https로 리다이렉트하도록 유도한다.
 
-정리하자면,
+### 정리하자면,
 
 * 80포트는 사용하지 않음. (443포트로 리다이렉트)
 * 해당 장비에는 your.domain.com, my.domain.com 2개의 도메인이 있고, 둘 다 https 인증 필요
