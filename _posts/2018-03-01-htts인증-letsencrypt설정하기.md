@@ -56,7 +56,7 @@ server {
 # my.domain.com https
 server {
   listen 443 ssl;
-  server_name my.domain.com
+  server_name my.domain.com;
 
   ssl_certificate       /etc/letsencrypt/live/my.domain.com/fullchain.pem;
   ssl_certificate_key   /etc/letsencrypt/live/my.domain.com/privkey.pem;
@@ -77,7 +77,7 @@ server {
 # your.domain.com https
 server {
   listen 443 ssl;
-  server_name your.domain.com
+  server_name your.domain.com;
 
   ssl_certificate       /etc/letsencrypt/live/your.domain.com/fullchain.pem;
   ssl_certificate_key   /etc/letsencrypt/live/your.domain.com/privkey.pem;
