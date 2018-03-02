@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTTPS인증 letsencrypt 설정하기
-tages: [HTTPS, nginx, server]
+tags: [HTTPS, nginx, server]
 ---
 보안을 위해 HTTPS 인증 설정을 해야한다. 하지 않으면 신뢰하지 않는 사이트라고 브라우저에서 나타나기 때문에 설정이 필요한데, 이를 피하기 위해 무료 HTTPS 인증서인 letsencrypt를 설정해보자.
 
